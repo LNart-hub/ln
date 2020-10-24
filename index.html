@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="Author" content="L. N.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lunnet Newman - Art Portfolio</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  border: 2px solid transparent;
+  border-color: transparent transparent #000 transparent;
+  z-index:1;
+}
+
+img {
+    float: middle;
+    width:  500px;
+    height: 500px;
+    object-fit: cover;
+    padding: 50px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+a:link.one {
+  color: Black;
+  text-decoration: none;
+}
+
+a:visited.one {
+  color: Black;
+  text-decoration: none;
+}
+
+a:hover.one {
+  color: Black;
+  text-decoration: none;
+}
+
+a:active.one {
+  color: Black;
+  text-decoration: none;
+}
+
+a:link.two {
+  color: White;
+}
+
+a:visited.two {
+  color: White;
+}
+
+a:hover.two {
+  color: White;
+}
+
+a:active.two {
+  color: White;
+}
+
+/*modal*/
+
+.myImg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(225,225,225,0.5);
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 800px;
+  object-fit:scale-down;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #111111;
+  padding-top:0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #111111;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #111111;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="navbar">
+  <table style="width:100%">
+    <tr>
+      <th style="padding-left:17.8%; float:left"><h2>L. N. Art Portfolio</h2></th>
+      <th style="width:20%; font-size:100%;"></th>
+      <th style="width:20%; font-size:100%;"><a href="aboutme.html" class="one">About Me</a></th>
+      <th style="width:20%; font-size:100%;padding-right:2.8%"><a href="#contact" class="one">Contact Me</a></th>
+    </tr>
+  </table>
+</div>
+
+<br><br><br><br>
+<div>
+<table style="width:100%">
+  <tr>
+    <th style="float:left; padding-left:14.7%;"><h3>Selected Works</h3></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th> <img class="myImg" alt="Farfar’s Garden, 2020" src= "farfargarden.jpg" ></a></th>
+    <th> <img class="myImg" alt="A Pink and Golden Billow of Foamy Clouds, 2020" src= "1st painting.jpg"></th>
+  </tr>
+  <tr>
+    <th> <img class="myImg" alt="Reading Woman, 2020"  src= "reading lady.jpg"></th>
+    <th> <img class="myImg" alt="Blue Clouds, 2020" src= "blue clouds.jpg"> </th>
+  </tr>
+  <tr>
+    <th> <img class="myImg" alt="Sitting Woman, 2020" src= "wineglass lady.jpg"></th>
+    <th><img class="myImg" alt="Betta Fish Sunset, 2020" src= "fishsunset.JPG"></th>
+  </tr>
+  <tr>
+    <th> <img class="myImg" alt="Miya, 2020" src= "imoto.jpg"></th>
+    <th> <img class="myImg" alt="Orange, 2020" src= "oorange.jpg"></th>
+  </tr>
+  <tr>
+    <th> <img class="myImg" alt="Green Light, 2020" src= "3rd painting.jpg"></th>
+    <th> <img class="myImg" alt="Wave, 2020" src= "wave.jpg"></th>
+  </tr>
+  <tr>
+    <th> <img class="myImg" alt="Fiery Clouds, 2019" src= "Fiery_Clouds_painting.jpg"></th>
+    <th> <img class="myImg" alt="Liseleje, 2019" src= "liseleje.jpg"> </th>
+  </tr>
+  <tr>
+    <th> <img class="myImg" alt="Path to the Beach, 2019"  src= "okinawabeach.jpg"></th>
+    <th> <img class="myImg" alt="Eye, 2018" src= "Eye.jpg"> </th>
+  </tr>
+
+</table>
+</div>
+
+
+
+<div style="width:100%; background-color:GREY; color:WHITE">
+  <br>
+  <div style="padding-left:10%;">
+    <a name="contact"> <h2> Contact me:</h2></a>
+    <ul style="font-size:20px; padding-left:10%">
+      <li>Email: artist.l.newman@gmail.com </li>
+      <li>Instagram:<a href="https://www.instagram.com/l.n._art/"target="_blank" class="two">@l.n._art</a></li>
+    </ul>
+  <br><br>
+  </div>
+</div>
+</body>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+
+<script>
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var content = document.getElementsByClassName("modal-content")
+
+var showModal = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+for (var i = 0; i < img.length; i++) {
+    img[i].addEventListener('click', showModal);
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+</html>
